@@ -1,4 +1,4 @@
-# epoch
+# dtell (date tell)
 
 > A tool to calculate dates based on a number of days relative to today.
 
@@ -6,8 +6,8 @@
 
 Clone the repository and navigate into it:
 ```bash
-git clone https://github.com/DriftingOtter/epoch.git
-cd epoch
+git clone https://github.com/DriftingOtter/dtell.git
+cd dtell
 ```
 
 Build the project:
@@ -17,9 +17,9 @@ cargo build --release
 
 ### Optional: Move Binary to Local Binaries Folder
 
-To access `epoch` without specifying the binary path, move it to your local binaries folder:
+To access `dtell` without specifying the binary path, move it to your local binaries folder:
 ```bash
-cp target/release/epoch ~/.local/bin
+cp target/release/dtell ~/.local/bin
 ```
 
 Ensure `~/.local/bin` is in your `PATH`. You can add it by updating your shell configuration file (`~/.bashrc` or `~/.zshrc`):
@@ -29,11 +29,11 @@ export PATH="$HOME/.local/bin:$PATH"
 
 ## Synopsis
 
-- **Basic usage**: `epoch <number of days>`
-- **Days option**: `epoch --days <number>`, `epoch -d <number>`
-- **Format option**: `epoch --format <type>`, `epoch -f <type>`
+- **Basic usage**: `dtell <number of days>`
+- **Days option**: `dtell --days <number>`, `dtell -d <number>`
+- **Format option**: `dtell --format <type>`, `dtell -f <type>`
 
-- **Help mode**: `epoch -h` or `epoch --help`
+- **Help mode**: `dtell -h` or `dtell --help`
 
 ### Additional Arguments
 
@@ -46,11 +46,11 @@ export PATH="$HOME/.local/bin:$PATH"
 
 ## Examples
 
-- `epoch --d 5 --f iso`: Displays the date 5 days in the future in ISO format.
-- `epoch 5`: Displays the date 5 days in the future in ISO format (default).
-- `epoch --days -10 --format us`: Displays the date 10 days in the past in US format (MM/DD/YYYY).
-- `epoch -d cat`: Displays an error message, as 'cat' is not a valid integer.
-- `epoch --days 7`: Displays the date 7 days in the future in ISO format (default).
+- `dtell --d 5 --f iso`: Displays the date 5 days in the future in ISO format.
+- `dtell 5`: Displays the date 5 days in the future in ISO format (default).
+- `dtell --days -10 --format us`: Displays the date 10 days in the past in US format (MM/DD/YYYY).
+- `dtell -d cat`: Displays an error message, as 'cat' is not a valid integer.
+- `dtell --days 7`: Displays the date 7 days in the future in ISO format (default).
 
 ## Authors
 

@@ -109,13 +109,13 @@ fn display_help() {
     println!(
         r#"
 NAME
-    epoch - Calculate dates based on a number of days relative to today.
+    dtell - Calculate dates based on a number of days relative to today.
 
 SYNOPSIS
-    epoch [--days | -d <number>] [--format | -f <type>] [<number>]
+    dtell [--days | -d <number>] [--format | -f <type>] [<number>]
 
 DESCRIPTION
-    epoch calculates the date a specified number of days in the future or past relative to the current date.
+    dtell calculates the date a specified number of days in the future or past relative to the current date.
 
     If the --days or -d option is provided, it specifies the number of days to add or subtract.
 
@@ -132,19 +132,19 @@ OPTIONS
     --format, -f <type>   Specify the output format for the date. Supported types are gen, us, iso.
 
 EXAMPLES
-    epoch --d 5 --f iso
+    dtell --d 5 --f iso
         Displays the date 5 days in the future in ISO format.
 
-    epoch 5
+    dtell 5
         Displays the date 5 days in the future in ISO format (default).
 
-    epoch --days -10 --format us
+    dtell --days -10 --format us
         Displays the date 10 days in the past in US format (MM/DD/YYYY).
 
-    epoch -d cat
+    dtell -d cat
         Displays an error message, as 'cat' is not a valid integer.
 
-    epoch --days 7
+    dtell --days 7
         Displays the date 7 days in the future in ISO format (default format).
 
 DIAGNOSTICS
@@ -167,7 +167,7 @@ SEE ALSO
     date(1)
 
 HISTORY
-    epoch written by Daksh Kaul / DriftingOtter, © 2025, and licensed under GNU General Public License version 3 (GPLv3).
+    dtell written by Daksh Kaul / DriftingOtter, © 2025, and licensed under GNU General Public License version 3 (GPLv3).
 
 BUGS
     No known bugs at this time.
