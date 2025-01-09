@@ -1,0 +1,18 @@
+[package]
+name = "epoch"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-2.0-or-later"
+authors = ["Daksh Kaul", "daksh <dakshkaul7790@gmail.com>"]
+readme  = "README.md"
+
+repository = "https://github.com/DriftingOtter/epoch.git"
+
+description = "Calculate dates based on a number of days relative to today."
+
+[dependencies]
+chrono = "0.4.39"
+
+[package.metadata.docs.rs]
+features = ["default"]
+
